@@ -1,4 +1,4 @@
-import React,{useRef} from 'react';
+import React from 'react';
 import { Button } from './Button';
 import './Pricing.css';
 import { IconContext } from 'react-icons/lib';
@@ -14,14 +14,7 @@ import Collapse from '@material-ui/core/Collapse';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-import { Link } from 'react-router-dom';
 
-import Avatar from '@material-ui/core/Avatar';
-import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
-import ShareIcon from '@material-ui/icons/Share';
-import MoreVertIcon from '@material-ui/icons/MoreVert';
 
 const useStyles = makeStyles((theme) => ({
     root: {

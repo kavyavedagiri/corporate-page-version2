@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
-import StickyVideo from 'react-sticky-video';
+// import StickyVideo from 'react-sticky-video';
 import 'react-sticky-video/dist/index.css';
 import CorporateVideo from '../components/video/CorporateVideo.mp4';
-import VideoPop from 'react-video-pop';
-import { Translate } from "@material-ui/icons";
+// import VideoPop from 'react-video-pop';
+// import { Translate } from "@material-ui/icons";
 
 
 function VedioSection() {

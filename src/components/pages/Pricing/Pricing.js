@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../Pricing.css';
-import MainSection from '../../MainSection';
+
 import {card1,card2,card3,card4,card5 } from './Data';
 import Pricing from '../../Pricing';
 
