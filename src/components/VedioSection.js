@@ -4,9 +4,14 @@ import 'react-sticky-video/dist/index.css';
 import CorporateVideo from '../components/video/CorporateVideo.mp4';
 // import VideoPop from 'react-video-pop';
 // import { Translate } from "@material-ui/icons";
+import { MdKeyboardArrowDown} from 'react-icons/md';
 
+import { IconContext } from 'react-icons/lib';
+import './VedioSection.css'
+import { Link } from 'react-scroll';
 
 function VedioSection() {
+
     const prevScrollY = useRef(0);
 
     const [goingUp, setGoingUp] = useState(false);
@@ -14,15 +19,24 @@ function VedioSection() {
     useEffect(() => {
       const handleScroll = () => {
         const currentScrollY = window.scrollY;
-        if (prevScrollY.current < currentScrollY && goingUp) {
-          setGoingUp(false);
-        }
+        const target = document.getElementsByClassName('smallWindow');
+      
         if (prevScrollY.current > currentScrollY && !goingUp) {
           setGoingUp(true);
+
         }
   
         prevScrollY.current = currentScrollY;
         console.log(goingUp, currentScrollY);
+        if(currentScrollY>1000){
+          target[0].style.display = "block"; 
+          console.log("working")
+        }else if(currentScrollY<999){
+          target[0].style.display = "none"; 
+          console.log(" n working")
+        }
+
+
       };
   
       window.addEventListener("scroll", handleScroll, { passive: true });
@@ -34,57 +48,36 @@ function VedioSection() {
 
     return (
         <>
-        <div 
-            style={{
-            position:"fixed",
-            backgroundColor:"black",
-          
-            width:"350px",
-            height:"200px",
-            top: "7em",
-            right: "1em",
-            zIndex:7}}>
-                <video style={{
-                    position:"absolute",
-                    backgroundSize:"cover",
-                    width:"100%",
-                    height:"100%",
-                    zIndex:7,
-
-                }}
-      autoPlay
-      loop
-      muted >
-    <source src={CorporateVideo} type="video/mp4"/>
-  </video>
-        </div>
-        <div 
-        style={{
             
-            padding: "10px 10px 10px 10px",
-            display: "flex",
-            flexDirection: "column",
-            width:"100%",
-            height:"auto",
-            justifyContent: "center",
-            background: "#fafafa",
-            zIndex:99}}>
+        <div className="smallWindow"
+            style={{
+           }}>
+                <video className="smallVideo"          
+                  autoPlay
+                  loop
+                  muted >
+                  <source src={CorporateVideo} type="video/mp4"/>
+               </video>
+        </div>
+        <div className="largeWindow">
 
 
-<video style={{zIndex:9}}
-      autoPlay
-      loop
-      muted >
-    <source src={CorporateVideo} type="video/mp4"/>
-  </video>
-  {/* <VideoPop Src={CorporateVideo} mute={true} autoplay={true}   root="video-root" ratio={{w:4,h:3}} /> */}
-
-
+                <video className="largeVideo"
+                      autoPlay
+                      loop
+                      muted >
+                    <source src={CorporateVideo} type="video/mp4"/>
+                  </video>
+                  <IconContext.Provider value={{ color: '#fff', size : "50" }}>
+                  <Link className='downButton'  activeClass="active" to="homePg" spy={true} smooth={true} duration={1000}>
+                  <MdKeyboardArrowDown  className="downButton" />
+                  </Link>
+                  </IconContext.Provider>
         </div>
 
+      
 
-
-</>
+    </>
 
     )
 }

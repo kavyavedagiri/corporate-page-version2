@@ -9,9 +9,11 @@ import Navbar from './components/Navbar';
 import ContactUs from './components/pages/Footer.js/Footer';
 import Testimonial from './components/Testimonials/TestimonialSection'
 import VedioSection from './components/VedioSection';
+
 function App() {
   return (
   <>
+ 
       <Navbar />
       <VedioSection/>
     
@@ -21,6 +23,8 @@ function App() {
        
       <Testimonial/>
       <ContactUs />
+     
+     
     </>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import MainSection from '../../MainSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour } from './Data';
+import { homeObjOne, homeObjTwo, homeObjThree } from './Data';
 
 
 function Home() {
@@ -9,7 +9,7 @@ function Home() {
       <MainSection {...homeObjOne} />
       <MainSection {...homeObjThree} />
       <MainSection {...homeObjTwo} />
-      <MainSection {...homeObjFour} />
+      
     </div>
   );
 }

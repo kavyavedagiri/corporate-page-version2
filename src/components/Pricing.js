@@ -7,7 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
-import CardMedia from '@material-ui/core/CardMedia';
+
 import CardContent from '@material-ui/core/CardContent';
 import CardActions from '@material-ui/core/CardActions';
 import Collapse from '@material-ui/core/Collapse';
@@ -18,19 +18,21 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 
 const useStyles = makeStyles((theme) => ({
     root: {
-      maxWidth: 450,
-      minWidth:350,
-
+      maxWidth: 380,
+      minWidth:320,
+      backgroundColor:"#e8e8e8",
+      
+      minHeight:200,
       [theme.breakpoints.down('sm')]: {
-     maxWidth: 550,
-      minWidth:450,
+     maxWidth: 450,
+      minWidth:350,
       },
 
       
     },
     media: {
       height: 0,
-      paddingTop: '56.25%', // 16:9
+      paddingTop: '50%', // 16:9
     },
     expand: {
       transform: 'rotate(0deg)',
@@ -42,15 +44,12 @@ const useStyles = makeStyles((theme) => ({
     expandOpen: {
       transform: 'rotate(180deg)',
     },
-    subParagraph1_c:{
-      maxWidth:500,
-      marginLeft:50,
-      marginRight:50
+    subParagraph:{
+      padding:"2px",
     },
     button:{
       justifyContent:'center',
-      paddingTop:1,
-      paddingLeft:34
+     paddingTop:"1px"
     }
   
   }));
@@ -75,26 +74,30 @@ function Pricing({
 
 <div style={{ margin:"20px"}}>
                
-               <div className='top-line'>{tag}</div> 
+               
              <Card className={classes.root} elevation={3} >
                <CardHeader title={title_c} subheader={subheader_c}/>
-                 <CardMedia subheader={subheader2_c}/>
-                   <CardContent >
-                     <Typography variant="body2" color="textSecondary" component="p">
+                 <CardContent >
+                     <Typography  variant="body2" color="textSecondary" component="p">
                        {subheader2_c} 
                      </Typography>
-                   </CardContent>
+                   </CardContent> 
                    <CardContent className={classes.button}>
                  {/* <div className='pricing__container-card'>   */}
                    <Button  buttonColor="primary" >
                       Try for free
                    </Button>    
                    {/* </div>  */}
-                   </CardContent>
-                   <Typography paragraph className={classes.subParagraph1_c}>{paragraph1_c}</Typography>
-                 <Typography className={classes.subParagraph1_c} paragraph>
-                  {subParagraph1_c}
+                   
+                 <Typography variant="subtitle1" gutterBottom>{paragraph1_c}</Typography>
+                 <Typography variant="body1" color="textSecondary" component="p" className={classes.subParagraph}>
+                 <li>{subParagraph1_c}</li> 
+                 <li>{subParagraph1_c}</li> 
+                 <li>{subParagraph1_c}</li> 
                  </Typography>
+
+                  </CardContent>
+
                <CardActions disableSpacing>
                  <IconButton
                  className={clsx(classes.expand, {

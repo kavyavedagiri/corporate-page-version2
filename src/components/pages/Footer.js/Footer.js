@@ -4,7 +4,7 @@ import './Footer.css';
 
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
-import CssBaseline from '@material-ui/core/CssBaseline';
+
 import TextField from '@material-ui/core/TextField';
 
 
@@ -18,7 +18,7 @@ import Container from '@material-ui/core/Container';
 
 import MenuItem from '@material-ui/core/MenuItem';
 
-const currencies = [
+const companySize = [
   {
     value: '0',
     label: '0',
@@ -91,7 +91,7 @@ function Footer() {
     <div className='footer-container' id="contactusPg"> 
       <section className='footer-subscription'>
       <Container component="main" maxWidth="sm">
-        <CssBaseline />
+        
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
             <MailOutlineIcon />
@@ -179,7 +179,7 @@ function Footer() {
           helperText="Please select your company size"
           variant="outlined"
         >
-          {currencies.map((option) => (
+          {companySize.map((option) => (
             <MenuItem key={option.value} value={option.value}>
               {option.label}
             </MenuItem>
