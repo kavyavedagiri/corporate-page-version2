@@ -17,13 +17,14 @@ import {
 // import { ImQuotesLeft, ImQuotesRight} from 'react-icons/im';
 
 import  CardActionArea from '@material-ui/core/CardActionArea';
-import CustomButtonGroupAsArrows from './CustomArrows'
+//import CustomButtonGroupAsArrows from './CustomArrows'
 import Paper from '@material-ui/core/Paper';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 350,
+    
     minWidth: 280,
     
     justifyContent:'center',
