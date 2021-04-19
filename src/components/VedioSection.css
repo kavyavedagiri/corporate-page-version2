@@ -1,7 +1,7 @@
 
   .largeWindow{
        
-    padding: 10px 10px 10px 10px;
+    /* padding: 10px 10px 10px 10px; */
     display: flex;
     flex-direction: column;
     width:100%;
@@ -14,11 +14,11 @@
   }
 .smallWindow{
     position:fixed;
-    background-color:black;
+
     width:350px;
     height:200px;
-    top: 7em;
-    right: 1em;
+    top: 4.9em;
+    right: 0px;
     z-index:7;
 }
  .smallWindow{
@@ -56,8 +56,7 @@
       position:fixed;
       background-color:black;
       margin: 0 auto 0 auto;
-      width:500px;
-      height:280px;
+    
        top: 5em;
       /* right: 8em; */
       z-index:7;

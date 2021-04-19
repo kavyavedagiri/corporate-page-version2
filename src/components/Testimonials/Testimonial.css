@@ -7,7 +7,16 @@
   .home__mainT-row {
     align-items: center;
   }
-  
+  .buttonRight{
+    transform: translate(25px, 0px);
+    cursor: pointer;
+
+  }
+  .buttonLeft{
+
+    transform: translate(-25px, 0px);
+    cursor: pointer;
+  }
   .rowT {
     display: flex;
     margin-right: -15px;
@@ -66,14 +75,21 @@
     line-height: 24px;
   }
   
-  @media screen and (max-width: 500px) {
+  /* @media screen and (max-width: 500px) {
     .container {
       padding-right: 80px;
       padding-left: 30px;
     }
   }
+   */
+   /* @media screen and (max-width: 1000px) {
+    .buttonRight{
+      transform: translate(-35px, 0px);
+      cursor: pointer;
   
-  @media screen and (max-width: 300px) {
+    }
+   } */
+  @media screen and (max-width: 600px) {
     .home__mainT-text-wrapper {
       padding-bottom: 65px;
     }
@@ -82,5 +98,16 @@
       max-width: 100%;
       flex-basis: 100%;
     }
+    .buttonRight{
+      transform: translate(-65px, 0px);
+      cursor: pointer;
+  
+    }
+    .buttonLeft{
+  
+      transform: translate(-25px, 0px);
+      cursor: pointer;
+    }
   }
+
   

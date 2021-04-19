@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../Pricing.css';
 
-import {card1,card2,card3,card4,card5 } from './Data';
+import {card1,card2,card3 } from './Data';
 import Pricing from '../../Pricing';
 
 function Services() {
@@ -21,8 +21,8 @@ function Services() {
         <Pricing {...card1} /> 
         <Pricing {...card2} /> 
         <Pricing {...card3} /> 
-        <Pricing {...card4} /> 
-        <Pricing {...card5} /> 
+        {/* <Pricing {...card4} /> 
+        <Pricing {...card5} />  */}
         </div>
       </div>
         </div>

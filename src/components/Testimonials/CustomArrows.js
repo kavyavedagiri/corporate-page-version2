@@ -1,7 +1,7 @@
 // import { getDefaultNormalizer } from "@testing-library/dom";
 import * as React from "react";
 import { MdKeyboardArrowRight,MdKeyboardArrowLeft } from 'react-icons/md';
-
+import './Testimonial.css';
 import { IconContext } from 'react-icons/lib';
 // const CustomLeftArrow = ({ onClick }) => (
 //   <i onClick={() => onClick()} className="custom-left-arrow" />
@@ -42,10 +42,10 @@ const CustomButtonGroupAsArrows = ({ next, previous }) => {
         transform: "translate(-25px, -135px)",
        }}> 
         <IconContext.Provider value={{ color: 'white', size : "50" }}>  
-        < MdKeyboardArrowLeft onClick={next} style = {{transform: "translate(-30px, 0px)"}}/>
+        < MdKeyboardArrowLeft onClick={next}/>
   
-  <div style = {{width: "100%"}}> </div>
- < MdKeyboardArrowRight  onClick={previous} style = {{transform: "translate(30px, 0px)"}}/>
+  <div style = {{width: "200%"}}> </div>
+ < MdKeyboardArrowRight  onClick={previous}/>
        {/* <button onClick={previous}>Prev</button> 
       <button onClick={next}>Next</button> */}
       </IconContext.Provider>

@@ -1,5 +1,5 @@
 .pricing__section {
-  padding: 160px 10px 10px 10px;
+  padding: 180px 0px 0px 0px;
     display: flex;
     flex-direction: column;
     
@@ -40,9 +40,7 @@
       width: 100%;
     }
   
-    .pricing__container-card {
-      width: 90%;
-    }
+    
   
     .pricing__wrapper {
       margin: 0 30px;
@@ -50,14 +48,5 @@
       flex-direction: column;
       align-items: center;
     }
-  
-    .pricing__container-card:nth-child(2) {
-      transform: scale(1);
-      background: #242424;
-      margin: 24px;
-    }
-  
-    .pricing__container-card:hover {
-      transform: none;
-    }
   }
+ 

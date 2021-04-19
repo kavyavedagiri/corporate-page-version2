@@ -30,8 +30,12 @@ const useStyles = makeStyles((theme) => ({
     alignItems:"center",
     textAlign:"center",
     [theme.breakpoints.down('md')]: {
-      maxWidth: 450,
-       minWidth:350,
+      maxWidth: 300,
+       minWidth:150,
+       },
+    [theme.breakpoints.down('sm')]: {
+      maxWidth: 220,
+       minWidth:130,
        },
   },
   media: {
@@ -71,7 +75,7 @@ const responsive = {
     partialVisibilityGutter:0
   },
   tablet: {
-    breakpoint:{ max: 1024, min: 800 },
+    breakpoint:{ max: 1024, min: 650 },
     items: 2,
     partialVisibilityGutter: 0
   },

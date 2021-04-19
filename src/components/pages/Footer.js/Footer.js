@@ -104,11 +104,11 @@ function Footer() {
               <Grid item xs={12} sm={6}>
                 <TextField
                   autoComplete="fname"
-                  name="firstName"
+                  // name="firstName"
                   variant="outlined"
                   required
                   fullWidth
-                  id="firstName"
+                  // id="firstName"
                   label="First Name"
                   autoFocus
                 />
@@ -118,9 +118,9 @@ function Footer() {
                   variant="outlined"
                   required
                   fullWidth
-                  id="lastName"
+                  // id="lastName"
                   label="Last Name"
-                  name="lastName"
+                  // name="lastName"
                   autoComplete="lname"
                 />
               </Grid>
@@ -129,9 +129,9 @@ function Footer() {
                   variant="outlined"
                   required
                   fullWidth
-                  id="email"
+                  // id="email"
                   label="Email Address"
-                  name="email"
+                  // name="email"
                   autoComplete="email"
                 />
               </Grid>
@@ -140,9 +140,9 @@ function Footer() {
                   variant="outlined"
                   required
                   fullWidth
-                  id="jobTitle"
+                  // id="jobTitle"
                   label="Job Title"
-                  name="jobTitle"
+                  // name="jobTitle"
                   autoComplete="job-title"
                 />
               </Grid>
@@ -151,10 +151,10 @@ function Footer() {
                   variant="outlined"
                   required
                   fullWidth
-                  name="phoneNumber"
+                  // name="phoneNumber"
                   label="Phone Number"
                   
-                  id="phoneNumber"
+                  // id="phoneNumber"
                   autoComplete="phone-number"
                 />
               </Grid>
@@ -164,14 +164,14 @@ function Footer() {
                   variant="outlined"
                   required
                   fullWidth
-                  id="companyName"
+                  // id="companyName"
                   label="Company Name"
-                  name="companyName"
+                  // name="companyName"
                   autoComplete="company-name"
                 /></Grid>
                   <Grid item xs={4}>
                   <TextField
-          id="outlined-select-currency"
+          // id="outlined-select-currency"
           select
           label="Select"
           value={currency}
@@ -188,7 +188,7 @@ function Footer() {
                 
                   <Grid item xs={12}>
                   <TextField
-                    id="outlined-textarea"
+                    // id="outlined-textarea"
                     label="Multiline Placeholder"
                     placeholder="Placeholder"
                     multiline
