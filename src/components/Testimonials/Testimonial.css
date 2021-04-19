@@ -1,3 +1,10 @@
+ .react-multiple-carousel__arrow { 
+    right: 0 !important; 
+  
+  }
+  .react-multiple-carousel__arrow--left {
+    left: calc(0% + 1px)!important; 
+} 
 .home__mainT-section {
     background-color: #f7f8fa;
     color:#1c2237;
@@ -107,7 +114,7 @@
   
       transform: translate(-25px, 0px);
       cursor: pointer;
-    }
+    }  
   }
 
   

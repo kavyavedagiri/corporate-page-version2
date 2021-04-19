@@ -44,8 +44,8 @@ const CustomButtonGroupAsArrows = ({ next, previous }) => {
         <IconContext.Provider value={{ color: 'white', size : "50" }}>  
         < MdKeyboardArrowLeft onClick={next}/>
   
-  <div style = {{width: "200%"}}> </div>
- < MdKeyboardArrowRight  onClick={previous}/>
+        <div style = {{width: "100%"}}> </div>
+        <MdKeyboardArrowRight className="buttonRight" onClick={previous}/>
        {/* <button onClick={previous}>Prev</button> 
       <button onClick={next}>Next</button> */}
       </IconContext.Provider>

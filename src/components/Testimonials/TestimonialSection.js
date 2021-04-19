@@ -24,7 +24,7 @@ import 'react-multi-carousel/lib/styles.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 350,
-    minWidth: 250,
+    minWidth: 280,
     
     justifyContent:'center',
     alignItems:"center",
@@ -102,14 +102,14 @@ function TestimonialSection() {
        
       <Carousel
       responsive={responsive}
-      // showDots={true}
+      // showArrows={true}
       infinite={true}
       // centerMode={true}
       partialVisible={true}
-      arrows={false} renderButtonGroupOutside={true} customButtonGroup={<CustomButtonGroupAsArrows />}
+      arrows={true}
       >
  <div>
- 
+ <div style={{margin:"60px"}} >
   <Paper className={classes.root}  >
       <CardActionArea>
       <CardContent>   
@@ -124,75 +124,44 @@ function TestimonialSection() {
           </CardActionArea>
     
     </Paper>
+</div>
   </div>
   <div>
+   <div style={{margin:"60px"}} >
+  <Paper className={classes.root}  >
+      <CardActionArea>
+      <CardContent>   
+      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
+          
+          <Typography className={classes.paragraph}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          </Typography>
+          </CardContent>
+          </CardActionArea>
+   
+    </Paper>
+    </div>
+  </div>
+  <div>
+  <div style={{margin:"60px"}} >
+  <Paper className={classes.root}  >
+      <CardActionArea>
+      <CardContent>   
+      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
+         
+          <Typography className={classes.paragraph}>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
+          </Typography>
+          </CardContent>
+          </CardActionArea>
+    </Paper>
+ </div>
+  </div>
   
-  <Paper className={classes.root}  >
-      <CardActionArea>
-      <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
-          
-          <Typography className={classes.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          </Typography>
-          </CardContent>
-          </CardActionArea>
-   
-    </Paper>
-  </div>
-  <div>
- 
-  <Paper className={classes.root}  >
-      <CardActionArea>
-      <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
-         
-          <Typography className={classes.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          </Typography>
-          </CardContent>
-          </CardActionArea>
-    </Paper>
- 
-  </div>
-  <div>
-
-  <Paper className={classes.root} >
-      <CardActionArea>
-      <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
-         
-          <Typography className={classes.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          </Typography>
-          </CardContent>
-          </CardActionArea>
-    </Paper>
-   
-  </div>
-  <div>
-
-  <Paper className={classes.root}  >
-      <CardActionArea>
-      <CardContent>   
-      <img src="images/features/svg-7.svg" alt="title" width="100px" height="100px"/>
-         
-          <Typography className={classes.paragraph}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip 
-          </Typography>
-          </CardContent>
-          </CardActionArea>
-    </Paper>
-    
-  </div>
  
   
 
