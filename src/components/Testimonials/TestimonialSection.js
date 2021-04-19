@@ -24,7 +24,7 @@ import 'react-multi-carousel/lib/styles.css';
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 350,
-    
+
     minWidth: 280,
     
     justifyContent:'center',
@@ -32,11 +32,11 @@ const useStyles = makeStyles((theme) => ({
     textAlign:"center",
     [theme.breakpoints.down('md')]: {
       maxWidth: 300,
-       minWidth:150,
+       minWidth:250,
        },
     [theme.breakpoints.down('sm')]: {
-      maxWidth: 220,
-       minWidth:130,
+      maxWidth: 300,
+       minWidth:250,
        },
   },
   media: {
