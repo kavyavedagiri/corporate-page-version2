@@ -16,23 +16,19 @@ function App() {
   <>
   <Router>
     <ScrollToTop/>
-      <Navbar />
+       <Navbar />
        <VedioSection/>
 
       <Switch>
         <Route path='/' exact component={Home} />
-     
-     
-       
       </Switch>
-       <Home/>
-        <Pricing />
+        <Home/>
         <Features/>
-       
-      <Testimonial/>
-      <ContactUs />
+        <Testimonial/>
+        <Pricing />
+        <ContactUs />
      
-      </Router>
+  </Router>
     </>
   );
 }
